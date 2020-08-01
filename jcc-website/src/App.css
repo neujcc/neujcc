@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -11,9 +11,23 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+} */
+
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
-.App-header {
+.background {
+  background-image: url(./Images/sakura_background.jpg);
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -35,4 +49,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
