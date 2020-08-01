@@ -1,12 +1,12 @@
 import './App.css';
+import JCCNavBar from './Components/NavBar/JCCNavBar.js'
 import React, {Component} from 'react';
-import Sakura from './Images/sakura_background.jpg'
 
 class App extends Component{
   render() {
     return (    
-      <body>
         <div className='background'>
+          <JCCNavBar />
           <h1 style={{margin: "0em"}}>JCC Website</h1>
           <p>
             dl;aksfjdsalkfjhaslfh dafjh;ldjsalkfjds l;dakfjs;lakdfj saf;kj da;lkfjdsal
@@ -42,8 +42,6 @@ class App extends Component{
             more
           </h1>
         </div>
-
-      </body>
     )
   }
 }
