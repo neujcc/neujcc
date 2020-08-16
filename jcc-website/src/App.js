@@ -1,10 +1,16 @@
 import './App.css';
 import React, {Component} from 'react';
 import Sakura from './Images/sakura_background.jpg'
+import Gallery from './Components/Pages/Gallery';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component{
   render() {
     return (    
+      <div>
+      <Switch>
+        <Route exact path="/Gallery" component={Gallery} />
+      </Switch>
       <body>
         <div className='background'>
           <h1 style={{margin: "0em"}}>JCC Website</h1>
@@ -44,6 +50,7 @@ class App extends Component{
         </div>
 
       </body>
+      </div>
     )
   }
 }
