@@ -1,5 +1,6 @@
 import './App.css';
 import JCCNavBar from './Components/NavBar/JCCNavBar.js'
+import JCCNavBarv2 from './Components/NavBar/JCCNavBarv2.js'
 import React, {Component} from 'react';
 import Sakura from './Images/sakura_background.jpg'
 import Gallery from './Components/Pages/Gallery';
@@ -14,7 +15,7 @@ class App extends Component{
       </Switch>
       <body>
         <div className='background'>
-          <JCCNavBar />
+          <JCCNavBarv2 />
           <h1 style={{margin: "0em"}}>JCC Website</h1>
           <p>
             dl;aksfjdsalkfjhaslfh dafjh;ldjsalkfjds l;dakfjs;lakdfj saf;kj da;lkfjdsal

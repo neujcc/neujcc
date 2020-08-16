@@ -28,6 +28,15 @@ body, html {
   background-size: cover;
 }
 
+.content{
+  margin-left: 250px;
+  background: url(./Images/sakura_background.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: 0.5s;
+}
+
 /* .App-header {
   background-color: #282c34;
   min-height: 100vh;
