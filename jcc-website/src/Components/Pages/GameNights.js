@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { getPhotoLinks } from './utils';
 import JustifiedGrid from 'react-justified-grid';
 
-class Gallery extends Component {
+class GameNights extends Component {
 
     constructor(props) {
         super(props);
@@ -13,7 +13,7 @@ class Gallery extends Component {
     }
 
     componentDidMount() {
-        getPhotoLinks('gallery').then((res) => {
+        getPhotoLinks('gameNights').then((res) => {
             this.setState(() => {
                 return {
                     images: res,
@@ -44,4 +44,4 @@ class Gallery extends Component {
     }
 }
 
-export default Gallery
+export default GameNights
