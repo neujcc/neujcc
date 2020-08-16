@@ -1,8 +1,10 @@
 import './App.css';
 import JCCNavBar from './Components/NavBar/JCCNavBar.js'
 import React, {Component} from 'react';
-import Sakura from './Images/sakura_background.jpg'
-import Gallery from './Components/Pages/Gallery';
+import Dinners from './Components/Pages/Dinners';
+import GameNights from './Components/Pages/GameNights';
+import Cooking from './Components/Pages/Cooking';
+import Miscellaneous from './Components/Pages/Miscellaneous';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component{
@@ -10,7 +12,10 @@ class App extends Component{
     return (    
       <div>
       <Switch>
-        <Route exact path="/Gallery" component={Gallery} />
+        <Route exact path="/Dinners" component={Dinners} />
+        <Route exact path="/Miscellaneous" component={Miscellaneous} />
+        <Route exact path="/Cooking" component={Cooking} />
+        <Route exact path="/GameNights" component={GameNights} />
       </Switch>
       <body>
         <div className='background'>

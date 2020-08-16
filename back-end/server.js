@@ -14,11 +14,35 @@ app.use(function (req, res, next) {
   next();
 });
 
-// set the gallery page route
-app.get('/gallery', async function (req, res) {
-  const gallery = await getAlbum("y7aMwVyG21FDSQqU9");
+// set the dinners page route
+app.get('/dinners', async function (req, res) {
+  const dinners = await getAlbum("Gf7WUiwYNtbXCqKg6");
   // ejs render automatically looks in the views folder
-  const data = extractPhotos(gallery);
+  const data = extractPhotos(dinners);
+  res.json(data);
+});
+
+// set the miscellaneous page route
+app.get('/miscellaneous', async function (req, res) {
+  const miscellaneous = await getAlbum("t3VKLpyf3jC6vS3o9");
+  // ejs render automatically looks in the views folder
+  const data = extractPhotos(miscellaneous);
+  res.json(data);
+});
+
+// set the game nights page route
+app.get('/gameNights', async function (req, res) {
+  const gameNights = await getAlbum("KAMJ6QaSXFv54m4p9");
+  // ejs render automatically looks in the views folder
+  const data = extractPhotos(gameNights);
+  res.json(data);
+});
+
+// set the cooking page route
+app.get('/cooking', async function (req, res) {
+  const cooking = await getAlbum("qevjaKjvCgzFBBn4A");
+  // ejs render automatically looks in the views folder
+  const data = extractPhotos(cooking);
   res.json(data);
 });
 
